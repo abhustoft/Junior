@@ -5,7 +5,7 @@ var ObjectID  = require('mongodb').ObjectID;
 var Converter = require("csvtojson").core.Converter;
 var fs        = require("fs");
 
-// Dummy variable
+// A dummy variable
 var param = {};
 
 var rStream      = [];
