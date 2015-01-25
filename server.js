@@ -21,7 +21,7 @@ mongoose.connect(db.url);
 var conn = mongoose.connection;
 conn.on('error', console.error.bind(console, 'connection error:'));
 conn.once('open', function callback () {
-    console.log('Mongodb opened by Mongoose');
+    console.log('Mongodb opened by Mongoose: '+ db.url);
 });
 
 // get all data/stuff of the body (POST) parameters

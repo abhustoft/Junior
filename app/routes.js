@@ -2,7 +2,7 @@
 var Store = require('./models/store');
 var Sale  = require('./models/sale');
 var mongoose = require('mongoose');
-var ObjectID = require('mongodb').ObjectID
+var ObjectID = require('mongodb').ObjectID;
 
 module.exports = function(app, express) {
 
@@ -81,7 +81,7 @@ module.exports = function(app, express) {
 
                 if (store) {
 
-                    var sale = new Sale({amount: req.body.amount,
+                    var sale = new Sale({sum: req.body.amount,
                                          _store: store.name,
                                          date: req.body.date});
 
