@@ -83,7 +83,7 @@ module.exports = function(app, express) {
 
                     var sale = new Sale({amount: req.body.amount,
                                          _store: store.name,
-                                         date: req.body.date});;
+                                         date: req.body.date});
 
                     sale.save(function (err) {
                         if (err) {
